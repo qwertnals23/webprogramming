@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input 태그와 값 읽기</title>
+	<link rel="stylesheet" href="../chapter 6/style_js.css">
+</head>
+<body>
+	<form name = "myform">
+		사용자ID <input type="text" name="userId"><br>
+		패스워드 <input tye = "password" name ="passwd"><br>
+		<input type="submit" value="log in" onCLick ="getInput()
+		">
+	</form>
+	<script>
+		function getInput() {
+			const id = document.myform.useId;
+			const pw = document.myform.passwd;
+			if (pw.value.length <=4)
+				alert(`${id.value}님 패스워드를 변경하세요`);
+			else
+				alert(${id.value}님 환영합니다`);
+		}
+	</script>
+</body>
+</html>
